@@ -18,7 +18,7 @@ type Props = {
   selectedPage: SelectedPage;
   setSelectedPage:(value:SelectedPage) => void
 }
-const Navbar = ({isTopOfPage,selectedPage,setSelectedPage}:Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = 'flex items-center justify-between'
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
