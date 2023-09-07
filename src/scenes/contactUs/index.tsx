@@ -121,8 +121,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                           /> 
                           {errors.name && (
                               <p className='mt-1 text-primary-500'>
-                                  {errors.message.type === "required" && "This field is required."}
-                                  {errors.message.type === "maxLength" && "Max length is 2000 character."}
+                                  {errors.message!.type === "required" && "This field is required."}
+                                  {errors.message!.type === "maxLength" && "Max length is 2000 character."}
                               </p>
                           )}
                           <button
